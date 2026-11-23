@@ -1,0 +1,1 @@
+export default function Footer(){return(<footer className="border-t border-line py-8 px-5 sm:px-8 text-sm text-mute"><div className="mx-auto max-w-7xl flex flex-col sm:flex-row justify-between gap-2"><p>© {new Date().getFullYear()} Soumya Sinha</p><p className="font-mono text-xs">Built with Next.js · React Three Fiber · Framer Motion</p></div></footer>);}
