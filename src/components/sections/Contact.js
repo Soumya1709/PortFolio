@@ -24,7 +24,7 @@ export default function Contact() {
 
         <Reveal>
           <p className="font-mono text-xs tracking-[.25em] text-emer uppercase">
-            06 — Contact
+            07 — Contact
           </p>
         </Reveal>
 

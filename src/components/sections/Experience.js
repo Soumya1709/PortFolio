@@ -7,7 +7,7 @@ import {experience} from "@/data/experience";
 export default function Experience(){
  const [o,setO]=useState(0);
  return(<section id="experience" className="mx-auto max-w-4xl px-5 sm:px-8 py-24 sm:py-32">
-  <SectionHeading index="05" label="Experience" title="Leadership & activities."/>
+  <SectionHeading index="06" label="Experience" title="Leadership & activities."/>
   <ol className="relative border-l border-line ml-2">{experience.map((e,i)=>(<li key={e.title} className="pl-8 pb-10 relative">
    <span className={`absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full transition-colors ${o===i?"bg-emer":"bg-mute"}`}/>
    <button onClick={()=>setO(o===i?-1:i)} aria-expanded={o===i} className="w-full text-left group">

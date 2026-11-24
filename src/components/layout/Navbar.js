@@ -13,7 +13,10 @@ export default function Navbar(){
   return()=>{io.disconnect();window.removeEventListener("scroll",s)};},[]);
  return(<header className={`fixed inset-x-0 top-0 z-50 transition-all ${solid?"bg-ink/70 backdrop-blur-md border-b border-line":""}`}>
   <nav aria-label="Primary" className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8 h-16">
-   <a href="/#home" className="font-display text-lg">Soumya<span className="text-emer">.</span></a>
+   <a href="/#home" className="group flex items-center gap-3">
+  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emer font-display text-lg italic text-ink">S</span>
+  <span className="hidden sm:block font-display text-lg opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Soumya Sinha</span>
+</a>
    <ul className="hidden lg:flex gap-8">{nav.map(n=><li key={n}><a href={`/#${id(n)}`} className={`relative text-sm py-1 transition-colors ${active===id(n)?"text-bone":"text-mute hover:text-bone"}`}>{n}
     {active===id(n)&&<motion.span layoutId="nav-dot" className="absolute -bottom-1 left-0 right-0 h-px bg-emer"/>}</a></li>)}</ul>
    <button className="lg:hidden p-2" aria-label={open?"Close menu":"Open menu"} aria-expanded={open} onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>

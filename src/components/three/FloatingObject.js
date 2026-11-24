@@ -10,7 +10,7 @@ export default function FloatingObject(){
   g.current.position.x+=(s.pointer.x*.5-g.current.position.x)*Math.min(1,d*2);});
  return(<Float speed={1.4} rotationIntensity={.3} floatIntensity={1}><group ref={g}>
   <mesh><torusKnotGeometry args={[1,.32,220,32,2,3]}/>
-   <meshPhysicalMaterial color="#c9cfcb" metalness={1} roughness={.18} clearcoat={1} clearcoatRoughness={.1}/></mesh>
+   <meshPhysicalMaterial color="#c9cfcb" metalness={1} roughness={.25} clearcoat={1} clearcoatRoughness={.1}/></mesh>
   <mesh scale={1.55}><icosahedronGeometry args={[1,1]}/><meshBasicMaterial color="#2ee59d" wireframe transparent opacity={.12}/></mesh>
  </group></Float>);
 }

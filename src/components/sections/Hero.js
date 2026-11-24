@@ -15,7 +15,7 @@ export default function Hero(){
   <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-5 sm:px-8 lg:grid-cols-2 min-h-[calc(100vh-8rem)]">
    <div className="order-2 lg:order-1 z-10">
     <motion.p {...up(.1)} className="font-mono text-xs tracking-[.3em] text-emer">SOUMYA SINHA</motion.p>
-    <motion.h1 {...up(.2)} className="font-display text-[2.8rem] sm:text-7xl xl:text-8xl leading-[.98] mt-5">Building Intelligence.<br/><span className="italic text-silver">Engineering Possibilities.</span></motion.h1>
+    <motion.h1 {...up(.2)} className="font-display text-[2.8rem] sm:text-6xl xl:text-7xl leading-[.98] mt-5">Building Intelligence.<br/><span className="italic text-silver">Engineering Possibilities.</span></motion.h1>
     <motion.p {...up(.35)} className="font-mono text-xs sm:text-sm text-emer mt-6">AI/ML Engineer <span className="text-mute">|</span> GenAI Developer <span className="text-mute">|</span> Software Engineer</motion.p>
     <motion.p {...up(.45)} className="text-mute mt-5 max-w-md text-base sm:text-lg">I build intelligent applications and scalable software systems, exploring the intersection of AI, data and engineering.</motion.p>
     <motion.div {...up(.55)} className="flex flex-wrap gap-3 mt-8">
@@ -26,7 +26,7 @@ export default function Hero(){
    <div className="order-1 lg:order-2 relative h-[420px] sm:h-[560px] lg:h-[720px]">
     <div className="absolute inset-0 opacity-80" aria-hidden="true"><HeroScene/></div>
     <motion.div style={{x}} initial={r?false:{opacity:0,y:40,scale:.97}} animate={{opacity:1,y:0,scale:1}} transition={{duration:1.2,delay:.3,ease:[.22,1,.36,1]}}
-     className="absolute inset-x-0 bottom-0 mx-auto w-[88%] sm:w-[75%] lg:w-[92%] pointer-events-none">
+     className="absolute inset-x-0 bottom-0 mx-auto w-[88%] sm:w-[75%] lg:w-[105%] pointer-events-none">
      <div className="absolute inset-x-[10%] bottom-0 h-3/4 rounded-full bg-emer/20 blur-[90px]" aria-hidden="true"/>
      <Image src="/images/soumya-profile.png" alt="Portrait of Soumya Sinha" width={1280} height={1228} priority sizes="(max-width:1024px) 90vw,45vw" className="relative w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,.6)]"/>
      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink to-transparent"/>
