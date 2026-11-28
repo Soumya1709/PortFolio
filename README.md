@@ -7,7 +7,7 @@ Designed with a focus on clean UI, smooth interactions, and a minimal yet profes
 
 ## 🌐 Live Portfolio
 
-**[Visit My Portfolio](YOUR_DEPLOYED_URL)**
+**[Visit My Portfolio](https://port-folio-kappa-green.vercel.app/)**
 
 ## 👩‍💻 About Me
 
